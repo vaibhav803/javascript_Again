@@ -11,7 +11,7 @@
 const id = Symbol('123')
 const myid = Symbol('123')
 
-console.log(id == myid);
+// console.log(id == myid);
 
 
 // Function, array, object
@@ -32,4 +32,43 @@ const hello  = function(){
 }
 
 
-console.log(typeof heroes);
+// console.log(typeof heroes);
+
+
+//++++++++++++++++++++++++++++++++++++++++++
+
+
+//Stack, Heap
+
+// Stack(Primitive), Heap(Non-Primitive)
+
+
+let myYoutubeName = "hiteshtcom"
+
+let myname = myYoutubeName
+
+
+
+console.log(myYoutubeName);
+
+console.log(myname);
+
+
+let userOne = {
+    email :"h@g.com",
+    upi : "us@ybl"
+}
+
+
+let userTwo = userOne
+
+
+userTwo.email = "2"
+
+
+// console.log(userOne);
+
+// console.log(userTwo);
+
+
+
