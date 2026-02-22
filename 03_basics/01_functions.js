@@ -72,4 +72,4 @@ function returnSecondValue(arr){
     return arr[2]
 }
 
-console.log(returnSecondValue([22,222,222,2223]));
+console.log(returnSecondValue([]));
