@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black ;color: white">
+
+    
+</body>
+
+<script>
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET','https://api.github.com/users/vaibhav803')
+    xhr.onreadystatechange = () => {
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4){
+            console.log(this.responseText)
+            const data = JSON.parse(this.responseText)
+            console.log(typeof data);
+            console.log(data.follwers);
+
+            //JSON.parse
+            //data.
+            //JSON.stringify
+
+            //js runtime injects console.log
+            // console.log is a debugger tools provided in the dev environemtn
+            
+            
+        }
+        
+    }
+    xhr.send()
+
+</script>
+</html>
