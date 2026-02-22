@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>Chai aur Javascript</h1>
+
+    <button id="stop">Stop</button>
+    <button id="start">start</button>
+</head>
+<body>
+    <script>
+       setInterval(function(str){
+        console.log(str,Date.now());
+        
+       },1000, "hi")
+
+       clearInterval()
+    </script>
+    
+</body>
+</html>
